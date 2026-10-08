@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sample/demo.md</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#222;line-height:1.6;}
+h1,h2,h3{color:#1f497d;}
+pre{background:#f4f4f4;padding:12px;border-radius:6px;overflow-x:auto;}
+code{background:#f4f4f4;padding:2px 5px;border-radius:4px;}
+pre code{background:none;padding:0;}
+blockquote{border-left:4px solid #1f497d;margin:16px 0;padding:8px 16px;background:#f2f6fb;}
+table{border-collapse:collapse;}
+img{max-width:100%;}
+a{color:#1f497d;}
+</style>
+</head>
+<body>
+<h1>Markdown Converter Demo</h1>
+<p>This is a <strong>sample document</strong> showing what the converter supports. It was written for the demo and contains no real data.</p>
+<h2>Text formatting</h2>
+<p>You can write <em>italic</em>, <strong>bold</strong>, and <code>inline code</code> like this. Code spans protect their content, so <code>**this stays literal**</code>.</p>
+<h2>Links and images</h2>
+<p>Visit <a href="https://techabout.com">TechAbout</a> for the company site. Images work too: <img src="https://techabout.com/assets/techabout_web/img/brand/favicon-32x32.png" alt="TechAbout icon"></p>
+<h2>Lists</h2>
+<p>Shopping list:</p>
+<ul>
+<li>Apples</li>
+<li>Bread</li>
+<li>Coffee</li>
+</ul>
+<p>Steps:</p>
+<ol>
+<li>Write Markdown</li>
+<li>Run the converter</li>
+<li>Open the HTML page</li>
+</ol>
+<h2>Code blocks</h2>
+<pre><code class="language-python">from markdown_converter import convert_file
+
+convert_file(&quot;notes.md&quot;, &quot;notes.html&quot;)</code></pre>
+<h2>Quotes and rules</h2>
+<blockquote>Simplicity is the soul of efficiency.</blockquote>
+<hr>
+<p>That&#x27;s everything the converter supports.</p>
+</body>
+</html>
